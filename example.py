@@ -6,7 +6,7 @@ Installation steps:
 2. Install spacy model: python -m spacy download en_core_web_sm
 3. Open a python shell and execute the following commands:
     a. import nltk
-    b. nltk.download("english")
+    b. nltk.download("stopwords")
     c. nltk.download("omw-1.4")
 """
 
