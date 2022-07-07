@@ -6,7 +6,7 @@ from flair.data import Sentence
 from nltk.corpus import stopwords, wordnet
 
 
-class DataProcessor:
+class TextProcessor:
     def __init__(self, tokenizer, tagger, lemmatizer):
         self.tokenizer = tokenizer
         self.tagger = tagger

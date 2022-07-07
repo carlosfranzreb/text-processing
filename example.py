@@ -15,14 +15,14 @@ from flair.tokenization import SpacyTokenizer
 from flair.models import SequenceTagger
 from nltk.stem import WordNetLemmatizer
 
-from processor import DataProcessor
+from processor import TextProcessor
 
 
 if __name__ == "__main__":
     tokenizer = SpacyTokenizer("en_core_web_sm")
     lemmatizer = WordNetLemmatizer()
     tagger = SequenceTagger.load("upos-fast")
-    processor = DataProcessor(tokenizer, tagger, lemmatizer)
+    processor = TextProcessor(tokenizer, tagger, lemmatizer)
     text = "This text is going to be processed; in different ways!"
     print(processor.tokenize(text, filter=False))
     print(processor.tokenize(text))
